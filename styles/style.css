@@ -1,0 +1,157 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: inline-block;
+  width: 150px;
+}
+
+.nav_ul {
+  text-align: center;
+}
+
+/* header style */
+
+header {
+  font-size: 0px;
+  margin-bottom: 5px;
+}
+
+.button > img {
+  width: 20px;
+}
+
+.main_nav,
+.logo,
+.button {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.main_nav {
+  display: inline-block;
+  width: calc(100% - 250px);
+}
+
+.button {
+  padding: 6px 0;
+  display: inline-block;
+  color: white;
+  background-color: #46a358;
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.nav_ul > li {
+  display: inline-block;
+  margin: 0 25px;
+  text-decoration: none;
+  padding: 25px 4px;
+  font-weight: 400;
+  color: #3d3d3d;
+}
+
+.nav_ul a {
+  color: black;
+}
+
+.active,
+.nav_ul > li:hover {
+  font-weight: 700;
+  border-bottom: solid 3px #46a358;
+}
+
+hr {
+  border-bottom: solid 1px #46a358;
+}
+
+/* section style */
+
+main {
+  margin-top: 50px;
+}
+
+#subsection,
+#img_banner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#subsection {
+  width: calc(100% - 515px);
+}
+
+#subsection > h3 {
+  color: #3d3d3d;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#subsection > h1 {
+  color: #3d3d3d;
+  text-transform: uppercase;
+  font-size: 70px;
+  font-weight: 900;
+}
+
+#subsection span {
+  color: #46a358;
+}
+
+#subsection p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #727272;
+}
+
+#shop_now {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  background-color: #46a358;
+  width: 140px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+#img_banner {
+  width: 507px;
+  margin: 0 0;
+}
+
+/* registration style */
+
+.registration {
+  border: solid 2px black;
+  border-radius: 5px;
+  text-align: center;
+  width: 213px;
+  margin: 0 auto;
+  padding-top: 2px;
+}
+
+.registration_form input {
+  display: block;
+  padding: 5px;
+  border: solid 1px black;
+  margin: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin: ;
+}

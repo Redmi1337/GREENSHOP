@@ -2,6 +2,31 @@ body {
   font-family: sans-serif;
 }
 
+.nav_ul li {
+  display: inline-block;
+  margin: 0 25px;
+  padding: 25px 4px;
+  color: #3d3d3d;
+}
+
+.nav_ul a {
+  color: black;
+}
+
+.active,
+.nav_ul li:hover {
+  border-bottom: solid 3px #46a358;
+}
+
+.active a,
+.nav_ul a:hover {
+  color: #46a358;
+}
+
+.button > img {
+  width: 20px;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -21,10 +46,6 @@ body {
 header {
   font-size: 0px;
   margin-bottom: 5px;
-}
-
-.button > img {
-  width: 20px;
 }
 
 .main_nav,
@@ -53,70 +74,47 @@ header {
   font-weight: 500;
 }
 
-.nav_ul > li {
-  display: inline-block;
-  margin: 0 25px;
-  text-decoration: none;
-  padding: 25px 4px;
-  font-weight: 400;
-  color: #3d3d3d;
-}
-
-.nav_ul a {
-  color: black;
-}
-
-.active,
-.nav_ul > li:hover {
-  font-weight: 700;
-  border-bottom: solid 3px #46a358;
-}
-
-hr {
-  border-bottom: solid 1px #46a358;
-}
-
 /* section style */
 
-main {
-  margin-top: 50px;
+.main_section {
+  background-color: #f5f5f580;
 }
 
-#subsection,
-#img_banner {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#subsection {
-  width: calc(100% - 515px);
-}
-
-#subsection > h3 {
+.subsection > h3 {
   color: #3d3d3d;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-#subsection > h1 {
+.subsection h1 {
   color: #3d3d3d;
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 900;
 }
 
-#subsection span {
+.subsection span {
   color: #46a358;
 }
 
-#subsection p {
+.subsection p {
   font-size: 14px;
-  font-weight: 400;
   color: #727272;
+  margin-bottom: 20px;
 }
 
-#shop_now {
+.subsection,
+.img_banner {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.subsection {
+  width: calc(100% - 515px);
+}
+
+.shop_now {
   display: block;
   text-align: center;
   padding: 12px;
@@ -130,21 +128,12 @@ main {
   color: white;
 }
 
-#img_banner {
+.img_banner {
   width: 507px;
   margin: 0 0;
 }
 
 /* registration style */
-
-.registration {
-  border: solid 2px black;
-  border-radius: 5px;
-  text-align: center;
-  width: 213px;
-  margin: 0 auto;
-  padding-top: 2px;
-}
 
 .registration_form input {
   display: block;
@@ -153,5 +142,13 @@ main {
   margin: 5px;
   border-radius: 5px;
   margin: 0 auto;
-  margin: ;
+}
+
+.registration {
+  border: solid 2px black;
+  border-radius: 5px;
+  text-align: center;
+  width: 213px;
+  margin: 0 auto;
+  padding-top: 2px;
 }

@@ -1,5 +1,54 @@
+@font-face {
+  font-family: cera_pro;
+  src: url("../fonts/CeraPro-Black.woff2") format(woff2);
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cera_pro;
+  src: url("../fonts/CeraPro-Medium.woff2") format(woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cera_pro;
+  src: url("../fonts/CeraPro-Regular.woff2") format(woff2);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cera_pro;
+  src: url("../fonts/CeraPro-Light.woff2") format(woff2);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: cera_pro;
+  src: url("../fonts/CeraPro-Thin.woff2") format(woff2);
+  font-weight: 100;
+  font-style: normal;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: cera_pro;
+}
+
+a {
+  color: #3d3d3d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav_ul li {
@@ -13,8 +62,7 @@ body {
   color: black;
 }
 
-.active,
-.nav_ul li:hover {
+.active {
   border-bottom: solid 3px #46a358;
 }
 
@@ -23,17 +71,12 @@ body {
   color: #46a358;
 }
 
-.button > img {
+.button img {
   width: 20px;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .logo {
-  display: inline-block;
+  justify-content: flex-start;
   width: 150px;
 }
 
@@ -54,17 +97,11 @@ header {
   font-size: 16px;
   padding: 0;
   margin: 0;
-  vertical-align: middle;
-}
-
-.main_nav {
-  display: inline-block;
-  width: calc(100% - 250px);
+  align-self: flex-start;
 }
 
 .button {
-  padding: 6px 0;
-  display: inline-block;
+  padding: 6px 5px;
   color: white;
   background-color: #46a358;
   width: 100px;
@@ -78,6 +115,13 @@ header {
 
 .main_section {
   background-color: #f5f5f580;
+  display: flex;
+  justify-items: center;
+  margin-bottom: 5em;
+}
+
+.subsection {
+  align-content: center;
 }
 
 .subsection > h3 {
@@ -101,31 +145,7 @@ header {
 .subsection p {
   font-size: 14px;
   color: #727272;
-  margin-bottom: 20px;
-}
-
-.subsection,
-.img_banner {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.subsection {
-  width: calc(100% - 515px);
-}
-
-.shop_now {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  margin-top: 30px;
-  text-transform: uppercase;
-  background-color: #46a358;
-  width: 140px;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
+  margin-bottom: 3em;
 }
 
 .img_banner {
@@ -152,3 +172,64 @@ header {
   margin: 0 auto;
   padding-top: 2px;
 }
+
+/* shop style */
+
+.shop_section {
+  display: flex;
+}
+
+.categories {
+  width: 310px;
+  padding: 0.5em 0.5em;
+  background-color: #fbfbfb;
+  margin-right: 1em;
+}
+
+.categories_list h2 {
+  font-weight: 700;
+  line-height: 17px;
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+.categories_list li {
+  font-size: 15px;
+  line-height: 40px;
+  text-indent: 1em;
+  font-weight: 400;
+  border: none;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.nav_filters {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+}
+
+.nav_filters li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+/* product banner design */
+
+.products {
+  display: flex;
+  width: 100%;
+}
+
+.product {
+  width: 250px;
+}
+
+/* .product img {
+  width: 250px;
+} */

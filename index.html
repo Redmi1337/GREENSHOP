@@ -11,23 +11,21 @@
   <body>
     <header>
       <div class="container">
-        <a href="" class="logo"><img src="images/logo.png" alt="logo" /></a>
+        <a href="" class="logo"><img src="images/logo.png" /></a>
 
         <nav class="main_nav">
           <ul class="nav_ul">
             <li class="active"><a href="index.html">Home</a></li>
-            <li class="#"><a href="">Shop</a></li>
+            <li class="#"><a href="#shop_section">Shop</a></li>
             <li class="#"><a href="">Planet care</a></li>
             <li class="#"><a href="">Blogs</a></li>
           </ul>
         </nav>
-
         <a href="registration.html" class="button"
           ><img src="images/login.png" alt="" /> Login</a
         >
-
-        <hr />
       </div>
+      <hr />
     </header>
 
     <main>
@@ -35,23 +33,63 @@
         <section class="main_section">
           <div class="subsection">
             <h3>Welcome to GreenShop</h3>
-
             <h1>Let’s Make a Better <span>Planet</span></h1>
-
             <p>
               We are an online plant shop offering a wide range of cheap and
               trendy plants. Use our plants to create an unique Urban Jungle.
               Order your favorite plants!
             </p>
-
             <a href="#" class="button">Shop now</a>
           </div>
-
           <img
             src="images/img-banner.png"
             alt="plant image"
             class="img_banner"
           />
+        </section>
+
+        <section class="shop_section">
+          <div class="categories">
+            <ul class="categories_list">
+              <h2>Categories</h2>
+              <li class="active"><a href="">House plants</a></li>
+              <li class=""><a href="">Potter plants</a></li>
+              <li class=""><a href="">Seeds</a></li>
+              <li class=""><a href="">Small plants</a></li>
+              <li class=""><a href="">Big plants</a></li>
+              <li class=""><a href="">Succulents</a></li>
+              <li class=""><a href="">Trerrariums</a></li>
+              <li class=""><a href="">Gardening</a></li>
+              <li class=""><a href="">Accessories</a></li>
+            </ul>
+          </div>
+
+          <nav class="nav_filters">
+            <ul>
+              <li class="active"><a href="">All plants</a></li>
+              <li class=""><a href="">New arrivals</a></li>
+              <li class=""><a href="">Sale</a></li>
+            </ul>
+            <form action="get">
+              <label for="sort">Sort by:</label>
+              <select name="sort" id="sort" />
+              <option value="Default">Default sorting</option>
+              <option value="expencive-cheap">From expencive to cheap</option>
+              <option value="cheap-expencive">From cheap to expencive</option>
+            </form>
+          </nav>
+          <div class="products">
+            <div class="product">
+              <a href="#">
+                <img
+                  src="images/product_images/1ab58d21463d86aa3768f5c6c78f8a1f.png"
+                  alt="Barberton Daisy"
+                />
+                <p class="product name">Barbarton Daisy</p>
+                <p class="product_price">$119.00</p>
+              </a>
+            </div>
+          </div>
         </section>
       </div>
     </main>

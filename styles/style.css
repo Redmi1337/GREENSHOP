@@ -227,7 +227,7 @@ header {
   margin: 0 1em;
 }
 
-.ad {
+.box_parent {
   background-color: linear-gradient(#46a3581a, #46a35808);
   text-align: center;
   display: block;

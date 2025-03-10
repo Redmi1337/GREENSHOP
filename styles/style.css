@@ -450,6 +450,7 @@ header {
 
 .blog_section .flex_parent {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .blog_section h2 {
@@ -471,7 +472,6 @@ header {
   text-align: start;
   width: fit-content;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .time_to_read {
